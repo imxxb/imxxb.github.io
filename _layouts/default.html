@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-jekyll-search/1.1.8/jekyll-search.min.js" integrity="sha256-YHAdSiDznyIEAhUYsPerIh6qoIktpxz9zJ47AtrFFGs=" crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+   window.simpleJekyllSearch = new SimpleJekyllSearch({
+       searchInput: document.getElementById('search-input'),
+       resultsContainer: document.getElementById('results-container'),
+       json: '{{ site.baseurl }}/search.json',
+       searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+       noResultsText: 'No results found',
+       limit: 10,
+       fuzzy: false,
+       exclude: ['Welcome']
+   })
+  </script>
+  
+
+</html>
