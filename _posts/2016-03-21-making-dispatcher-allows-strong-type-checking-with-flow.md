@@ -1,6 +1,7 @@
 ---
 title: Dispatcher.js 代码中类型申明标记是什么？
 layout: post
+tags: [js, flux, javascript]
 ---
 
 在阅读flux的中源代码时候遇到一些奇怪的标记
