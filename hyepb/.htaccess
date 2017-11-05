@@ -1,0 +1,4 @@
+AuthName "Prompt"
+AuthType Basic
+AuthUserFile /usr/local/apache2/htdocs/dot_htpasswd_example
+Require valid-user
